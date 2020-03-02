@@ -58,9 +58,12 @@ int main(int argc, const char **argv)
 
     // Build Model.
     RouteModel model{osm_data};
+    float start_x = 10, start_y = 10, end_x = 90, end_y = 90;
+    std::cout<<"Input four float numbers for start_x, start_y, end_x and end_y respectively"<<std::endl;
+    std::cin >> start_x >> start_y >> end_x >> end_y;
 
     // Create RoutePlanner object and perform A* search.
-    RoutePlanner route_planner{model, 10, 10, 90, 90};
+    RoutePlanner route_planner{model, start_x, start_y, end_x, end_y};
     route_planner.AStarSearch();
 
     std::cout << "Distance: " << route_planner.GetDistance() << " meters. \n";

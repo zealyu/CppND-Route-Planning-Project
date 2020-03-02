@@ -1,9 +1,11 @@
 #ifndef ROUTE_PLANNER_H
 #define ROUTE_PLANNER_H
 
+#include <alloca.h>
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 #include "route_model.h"
 
 

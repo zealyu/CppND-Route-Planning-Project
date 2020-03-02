@@ -12,6 +12,7 @@ project(OSM_A_star_search)
 set(LIBRARY_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/lib")
 
 # Locate project prerequisites
+#find_package(io2d REQUIRED PATHS "/mnt/c/Users/zealy/Workspace/P0267_RefImpl/Debug/P0267_RefImpl/P0267_RefImpl/")
 find_package(io2d REQUIRED)
 find_package(Cairo)
 find_package(GraphicsMagick)
